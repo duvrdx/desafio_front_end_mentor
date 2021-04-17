@@ -1,0 +1,174 @@
+/* Importando Assets */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* Resetando valores padrões */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #F4F6F6;
+}
+
+/* Media Queries */
+
+@media (min-width: 320px)
+{
+ body{
+     background-color: #0A0C1B;
+     display: block;
+ }
+ .container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10% auto 10% auto;
+    background-color: #1C1938 ;
+    width: 90%;  
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+.container .text-wrapper{
+    height: 50%;
+    width: 90%;
+    padding: 15px 15px 15px 15px; 
+    align-items: flex-start;
+    text-align: center;
+}
+
+.container .text-wrapper h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container .text-wrapper p {
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+    color: rgb(160, 160, 160);
+}
+
+.container .text-wrapper .infos-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .text-wrapper .infos-container h3{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.container .img-wrapper{
+    height: 50%;
+    width: 100%;
+}
+
+.container .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius:  10px 10px 0 0;
+}
+
+.attribution{
+    bottom: 5;
+}
+
+}
+
+@media (min-width: 826px)
+{
+    .container{
+        flex-direction: row;
+        background-color: #1C1938 ;
+        width: 90%;  
+        border-radius: 20px;
+        text-align: start;
+    }
+    
+    .container .text-wrapper{
+        height: 100%;
+        width: 50%;
+        padding: 10px 10px 10px 40px; 
+        text-align: start;
+    }
+
+    .container .text-wrapper h1{
+        font-size: 1.8rem; 
+        line-height: 1.9rem;
+        margin-bottom: 20px;
+        text-align: start;      
+    }
+
+    .container .text-wrapper p {
+        font-size: .7rem;
+        width: 75%;
+        text-align: start;       
+    }
+
+    .container .text-wrapper .infos-container{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-between;
+    }
+
+    .container .text-wrapper .infos-container h3{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+    .container .img-wrapper{
+        display: flex;
+        margin: 0 0 0 50px;
+        width: 50%;
+        height: 100%;
+     }
+
+    .container .img-wrapper img{
+        width: 100%;
+        height: 100%;
+        border-radius:  0 20px 20px 0;
+    }
+
+}
+
+@media (min-width: 1440px)
+{
+    .container{
+        width: 65%;  
+    }
+    
+    .container .text-wrapper{
+        padding: 50px 50px 50px 50px; 
+    }
+
+    .container .text-wrapper h1{
+        font-size: 3rem; 
+        line-height: 3.2rem;
+    }
+
+    .container .text-wrapper p {
+        font-size: 1rem;
+    }
+
+    .container .text-wrapper .infos-container h3{
+        font-size: 2rem;
+    }
+
+}
+
+/* Classes utilitárias */
+
+.purple{
+    color:#9E59CB;
+}
+
+/* Classes pré-difinidas */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
